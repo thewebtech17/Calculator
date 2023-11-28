@@ -1,0 +1,114 @@
+body {
+
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+
+.heading {
+    font-family: 'Rubik Dirt', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #e3f9ff; */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+
+}
+
+.calculator {
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal {
+    width: 145px;
+    color: rgb(27, 28, 28);
+    background-color: coral;
+}
+
+form input.operator {
+    color: rgb(27, 28, 28);
+    background-color: coral;
+}
+
+footer a {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(19, 19, 19);
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 480px) {
+    .calculator form input {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .calculator form input {
+        width: 15px;
+        height: 15px;
+        font-size: 5px;
+    }
+
+    .heading {
+        font-size: 7px;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .calculator form input {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+}
